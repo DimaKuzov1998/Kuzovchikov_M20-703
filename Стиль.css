@@ -1,0 +1,45 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 15px;
+}
+
+h1 {
+	background-color: #ff0066;
+	color: #ffffff;
+	text-align: center;
+}
+
+h2 {
+	color: #0066cc;
+	text-align: center;
+}
+
+span {
+	font-weight: bold;
+}
+
+table, th, td {
+  border: 2px solid black;
+  border-collapse: collapse;
+}
+
+th {
+	padding: 1px 5px 1px 5px;
+}
+
+.colll {
+	text-align: right;
+}
+
+.qwer {
+	text-align: center;
+}
+
+.poiu {
+	color: #cccccc;
+	font-size: 11px;
+}
+
+.rty {
+	width: 17px;
+}
