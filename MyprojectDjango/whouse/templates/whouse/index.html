@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+	{% load bootstrap5 %}
+	{% bootstrap_javascript %}
+	{% bootstrap_css %}
+	<title>Описание склада</title>
+</head>
+<body>
+	<h1>Товары</h1>
+	<p>.</p>
+	{% for bb in bbs %}
+	<div>
+		<h2>{{ bb.content }}</h2>
+		<p> <i>Высота, см:</i> {{ bb.height }}</p>
+		<p> <i>Ширина, см:</i> {{ bb.width }}</p>
+		<p> <i>Длина, см:</i> {{ bb.length }}</p>
+		<p> <i>Масса, кг:</i> {{ bb.weight }}</p>
+		<p> <i>Дата поступления:</i> {{ bb.recdate|date:"d.m.Y. H:i:s"}}</p>
+		<p> <i>Номер договора:</i> {{ bb.nofcon }}</p>
+		<p> <i>Клиент:</i> {{ bb.client }}</p>
+		<p> <i>Дата окончания:</i> {{ bb.expdate }}</p>
+		<p> <i>Стеллаж:</i> {{ bb.rack }}</p>
+		<p> <i>Номер позиции:</i> {{ bb.numofpos }}</p>
+		<p> . </p>
+	</div>
+	{% endfor %}
+</body>
+</html>
